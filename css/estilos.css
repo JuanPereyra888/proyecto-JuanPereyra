@@ -50,6 +50,11 @@ nav a:hover{
     display:flex;
     justify-content: center;
     color: antiquewhite;
+    width: 2000px;
+    transition: 2s;
+}
+.relleno:hover{
+    width: 2100px;
 }
 .rellenoDos{grid-area: rellenoDos;
     display: flex;
