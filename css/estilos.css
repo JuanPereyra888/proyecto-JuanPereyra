@@ -1,0 +1,89 @@
+body{
+    font-family: sans-serif;
+    margin: 0px;
+    background-image: url(../assets/fondo.jpg);
+}
+header{
+    display: flex;
+    min-height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+a{
+    text-decoration: none;
+}
+.nav-link{
+    margin: 10px;
+    color: black;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover{
+    color:maroon;
+}
+.gradient{
+    background-image: linear-gradient(to left,#b5b5b5, white);
+}
+
+.gridMain{
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows:auto auto auto auto ;
+    grid-template-areas:
+    "titulo"
+    "relleno"
+    "rellenoDos"
+    "imagenMain"
+    ;
+
+}
+.titulo{grid-area: titulo;
+	display: flex;
+	justify-content: center;
+    color: whitesmoke;
+    
+	}
+.relleno{grid-area: relleno;
+    display:flex;
+    justify-content: center;
+    color: antiquewhite;
+}
+.rellenoDos{grid-area: rellenoDos;
+    display: flex;
+    justify-content: left;
+    color:white;
+}
+.imagenMain{grid-area: imagenMain;
+    display: flex;
+    justify-content: center;
+    transform: scale(.9,.9);
+    width: 300px;
+    transition: 1s;
+}
+
+.imagenMain:hover{
+    width:320px ;
+}
+.gridFooter{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:"queso" "tomate" "lechuga" ;
+
+}
+
+    
+footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center ;
+	height: auto;
+    flex-wrap: wrap;
+}
+
+
+
